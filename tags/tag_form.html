@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tag <form action=""></form> </title>
+    </head>
+    <body>
+        <!--
+            used to define a formulary
+            forms group inputs from users
+            can receive all global attritubes
+            attributtes:
+                accept-chartset: define the encode used when send the form
+                action: defines to which url the form will be send
+                autocomplete: define the fields will have function autocomplete enabled. Value= on, off
+                enctype: define which form codification will be used. Value = application/x-www-form-urlencoded, multipart/form-data, text/plain
+                method: define which will be the method to send. Value = get, post
+                name: define form name
+                novalidate: define if it's necessary to be validate before send it
+                target: define the target when send the form. Values = _blank, _self, _parent, _top
+            default style is display: block, margin-top: 0em
+        -->
+        <form action="/send" method="post" target="_blank">
+            <input type="text" name="username">
+            <input type="button" value="Send">
+        </form>
+    </body>
+</html>

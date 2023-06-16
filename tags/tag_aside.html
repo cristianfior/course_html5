@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tag <aside></aside> </title>
+        <style>
+            body {
+                margin: 0;
+            }
+            header, footer {
+                height: 10vh;
+                background-color: #CCC;
+            }
+            section {
+                display: flex;
+                flex-direction: row;
+            }
+            main {
+                height: 80vh;
+                background-color: #999;
+                flex: 1
+            }
+            aside {
+                height: 80vh;
+                background-color: goldenrod;
+                width: 10vw;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+            defines a content aside the article
+            important to divide the content semantically
+            can receive all global attritubes
+            default style is display: block
+        -->
+        <header></header>
+        <section>
+            <main></main>
+            <aside>
+                <p> This content will be aside </p>
+            </aside>
+        </section>
+        <footer></footer>
+    </body>
+</html>

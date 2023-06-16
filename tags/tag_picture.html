@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tag <picture></picture> </title>
+    </head>
+    <body>
+        <!--
+            used to define more than an image source
+            used to show images responsively
+            should have one img tag and one or more source tags
+            can receive all global attributes
+        -->
+
+        <picture>
+            <source srcset="tag_source512.png" media="(min-width: 512px)">
+            <source srcset="tag_source256.png" media="(min-width: 256px)">
+            <img src="tag_source64.png" alt="logo">
+        </picture>
+
+    </body>
+</html>

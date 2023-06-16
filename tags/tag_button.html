@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tag <button></button> </title>
+    </head>
+    <body>
+        <!--
+            used to define a clickable button
+            inside this tag can be putted content like text or image
+            always specify attribute type
+            every browser can use a different pattern to attribute type
+            can receive all global attritubes
+            attributes:
+                autofocus: define the focus on this element after the page loads
+                disabled: define the button as disabled
+                form: defines which form the button belongs
+                formaction: define the action when click
+                formenctype: define the enctype when click. Values= application/x-www-form-urlencoded, multipart/form-data, text/plain
+                formmethod: define the method when click. Values: get, post
+                formnovalidate: disable form validation when click
+                formtarget: define the target when click. Values: _blank, _self, _parent, _top, frame name
+                name: define button name
+                type: define button type. Values: button, reset, submit
+                value: define button initial value
+        -->
+        <form id="form1">
+            <input type="text" name="name" id="nameid">
+        </form>
+        <button type="button" form="form1"> Button </button>
+        <button type="reset" form="form1"> Clean </button>
+        <button type="submit" form="form1"> Send </button>
+    </body>
+</html>

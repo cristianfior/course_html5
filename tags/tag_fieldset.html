@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tag <fieldset></fieldset> </title>
+    </head>
+    <body>
+        <!--
+            used to define a group of fields in a form
+            this tag draws a box around the grouped fields
+            can have a tag legend beyond the fields
+            can receive all global attritubes
+            attributes: 
+                disabled: define the content grouped as disabled
+                form: define which form the grouped content belongs
+                name: define group name
+            default style is display: block, margin-left: 2px, margin-right: 2px, padding-top: 0.35em, padding-bottom: 0.625em, padding-left: 0.75em, padding-right: 0.75em, border: 2px groove
+
+            legend is used to define a subtitle to tag, can receive global attr, default style is display: block, padding-left: 2px, padding-right: 2px, boder: none
+        -->
+
+        <fieldset>
+            <legend>Delivery Address</legend>
+            <input type="text" name="zipcode" placeholder="CEP">
+            <input type="text" name="zipcode" placeholder="Address">
+            <input type="text" name="zipcode" placeholder="City">
+            <input type="text" name="zipcode" placeholder="State">
+        </fieldset>
+    </body>
+</html>

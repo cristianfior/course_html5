@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tag <table></table> </title>
+        <style>
+            table {
+                width: 100%;
+                font-family: Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+            used to define a table
+            only tag table don't create full table
+            it's necessary use tag tr and td to create rows and cells
+                tr defines a row inside a table, must have one or more tags th and/or td
+                td defines a cell inside a table, must be used inside a tr tag. Have some attributes:
+                    colspan: defines the number of columns which the cell must fill
+                    headers: defines one or more cells in the header
+                    rowspan: defines the number of rows which the cell must fill
+            a complex table can contain tags caption, col, colgroup, th, thead, tfoot and tbody
+                th is used to define a header cell
+                    must be setted inside a tr tag
+                    some attributes:
+                        abbr: defines an abreviation of the cell header content
+                        colspan: defines the number of columns that will be filled 
+                        headers: defines one or more cells as headers
+                        rowspan: defines the number of rows that will be filled
+                        scope: defines if the cell is a header row, column, row group or column group. Values: col, colgroup, row, rowgroup
+                        sorted: defines the order direction of column. Values: reversed, number, reversed number, number reversed
+                thead is used to group the content of table header 
+                    browsers can use it to activate the scroll on the body table
+                    is used together with the tags tbody and tfoot
+                    must be son of a tag table
+                    can be setted after a tag caption and/or colgroup
+                    must be setted before tags tbody and tfoot
+                    must have one or more tr inside it
+                    don't affect visually, but can receive CSS styles
+                tbody is used to group the content of table body
+                    the tag is used together with tags thead and tfoot
+                    browsers can use it to activate the scroll on the body table
+                    must be son of a tag table
+                    must be setted between thead and tfoot tags
+                    must have one or more tr inside it
+                    don't affect visually, but can receive CSS styles
+                tfoot is used to group the content of table footer
+                    the tag is used together with tags thead and tfoot
+                    browsers can use it to activate the scroll on the body table
+                    must be son of a tag table
+                    must be setted after tags tbody and tfoot
+                    must have one or more tr inside it
+                    don't affect visually, but can receive CSS styles
+                colgroup used to define properties in the cells of a table
+                    must be used inside a tag table
+                    attributes:
+                        span: defines the column number that the group should include
+                col used to define properties in the cells of a column
+                    must be used inside a tag colgroup
+                    attributes:
+                        span: defines the column number that the group should include
+                caption used to define subtitle to table
+                    must be setted just after the tag table
+            default style is: display: table, border-collapse: separate, border-spacing: 2px, border-color: gray
+        -->
+        <table>
+            <caption> This is a table </caption>
+            <colgroup>
+                <col span="2" style="background-color: tomato;">
+                <col style="background-color: chocolate;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th sorted="reversed"> Header1 </th>
+                    <th abbr="H2"> Header2 </th>
+                    <th> Header3 </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2"> A1 </td>
+                    <td> C1 </td>
+                </tr>
+                <tr>
+                    <td> A2 </td>
+                    <td rowspan="2"> B2 </td>
+                    <td> C2 </td>
+                </tr>
+                <tr>
+                    <td> A3 </td>
+                    <td> C3 </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"> Footer </td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

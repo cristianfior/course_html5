@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tag <script></script> </title>
+    </head>
+    <body>
+        <!--
+            defines a script in JavaScript executed in the client side
+            allow a script be written inside it or point to an external font
+            can receive all global attr
+            attributes
+                async: defines that the script will work async (only works for external scripts)
+                charset: defines the default characters to be used
+                defer: defines that the script will only run after the page is loaded
+                src: defines the external font to the script
+                type: defines the media type of the script
+            default style is display: none
+            shoul be placed just before the body end
+        -->
+        <script>
+            alert('Internal Script')
+        </script>
+        <script src="tag_script.js"></script>
+    </body>
+</html>

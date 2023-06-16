@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tag <noscript></noscript> </title>
+        <noscript>
+            <style>
+                body {
+                    background-color: tomato;
+                    color: antiquewhite;
+                }
+            </style>
+        </noscript>
+    </head>
+    <body>
+        <!--
+            defines an alternative content to the users who deactivaded the browser scripts
+            the content inside the tag will only be showed if the scripts are not supported
+            can receive all global attributes
+            don't have default style
+        -->
+        <noscript>
+            <p>JavaScript is deactivaded</p>
+        </noscript>
+        <script>
+            alert('Hellow!')
+        </script>
+    </body>
+</html>

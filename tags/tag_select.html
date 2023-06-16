@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tag <select name="" id=""></select> </title>
+    </head>
+    <body>
+        <!--
+            used to define a filed of suspended lists
+            every field option is defined by tag option
+            can receive all global attritubes
+            attributes:
+                autofocus: define focus to element when the page is loaded
+                disabled: defines the field as disabled
+                form: define which form this field belongs
+                multiple: define if the user can select more than one option
+                name: define field name
+                requeired: defines field as mandatory
+                size: define how many options should be visible in the list
+
+            option is used to define options in a list, all global attr
+                attributes:
+                    disabled: define a group as disabled
+                    label: define group label
+                    selected: define if the option can be selected as default
+                    value: define the value that will be submitted if the option is selected
+            optgroup is used to group options related to a suspended list, all global attr
+                attributes:
+                    disabled: disable a group
+                    label: defines a label
+        -->
+        <select>
+            <optgroup label="Brazilian-States">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </optgroup>
+        </select>
+    </body>
+</html>

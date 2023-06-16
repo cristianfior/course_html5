@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tag <canvas></canvas> </title>
+    </head>
+    <body>
+        <!--
+            used to define q box of 2d and 3d draws
+            to draw it's necessary js
+            can receive all global attritubes
+            attr:
+                height: define box height
+                width: define box width
+            default style is height: 150px, width: 300px
+        -->
+        <canvas id="drawbox"></canvas>
+        <script>
+            const box = document.querySelector('#drawbox')
+            const context = box.getContext('2d')
+
+            context.fillStyle = '#FF0000'
+            context.fillReact(0, 0, 100, 100)
+        </script>
+    </body>
+</html>

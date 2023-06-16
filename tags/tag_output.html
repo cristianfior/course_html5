@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tag <output></output> </title>
+    </head>
+    <body>
+        <!--
+            used to show result of a calculus
+            can receive all global attritubes
+            attr:
+                for: define the relation between result and elements used to calc
+                form: define which form this field belongs
+                name: define a name
+            default style is display: inline
+        -->
+        <form oninput="c.value = parseInt(a.value) + parseInt(b.value)">
+            <input type="range" id="a" min="0" max="10">
+            +
+            <input type="number" id="b" value="0">
+            =
+            <output name="c" for="a b">0</output>
+        </form>
+    </body>
+</html>

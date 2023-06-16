@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tag <track> </title>
+    </head>
+    <body>
+        <!--
+            used to define a text strip in a media tag
+            commonly used to define subtitles in videos
+            can receive all global attributes
+            attributes:
+                default: defines if it's the default track
+                kind: define the type of text strip. Value: captions, chapters, descriptions, metadata, subtitles
+                label: define the label of the text strip
+                src: defines the source of the text strip
+                srclang: defines language of the text strip data
+        -->
+        <video src="tag_video.mp4" poster="tag_video.jpg" controls width="600">
+            <track src="tag_track_pt.vtt" label="pt-BR" kind="subtitles" srclang="pt">
+            <track src="tag_track_jp.vtt" label="jp-JP" kind="subtitles" srclang="jp">
+        </video>
+    </body>
+</html>

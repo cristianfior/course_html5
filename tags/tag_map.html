@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tag <map name=""></map> </title>
+    </head>
+    <body>
+        <!--
+            used to create a map of clickable image
+            attribute name is mandatory to relationate with tag img
+            defines the clickable areas using various tags area
+            can receive all global attritubes
+            default style is display: inline
+
+            area attributes:
+                alt: define an alternative text to image
+                coords: define area coordinates. Values: (x1, y1, x2, y2 -> rect shape), (x, y, radius -> circle shape), (x1, y1, x2, y2... xn, yn -> poly shape)
+                download: used to force the download of target link
+                href: defines the address of target link
+                hreflang: defines the language of target link
+                media: defines the media or device of target link
+                rel: define the relatonship between current document and target one. Values: alternate, author, bookmark, external, help, license, next, nofollow, noreferer, noopener, prev, search, tag
+                shape: define an area shape. Values: default, rect, circle poly
+                target: defines where link should be open. Values: _blank, _parent, _self, _top, frame name
+                type: defines media type of target link
+        -->
+        <img src="tag_source512.png" alt="logo" usemap="#logo-map">
+        <map name="logo-map">
+            <area shape="circle" coords="211,263,15" href="#" alt="Zoisquerdo">
+            <area shape="circle" coords="301,263,15" href="#" alt="Zoidireito">
+        </map>
+    </body>
+</html>
